@@ -17,7 +17,7 @@ jQuery.fn.loadRepositories = function(username) {
          $.each(this, function() {
             var repo = this;
             var column = $('<div class="col-md-4">')
-            var panel = $('<div class="panel panel-info">');
+            var panel = $('<div class="panel panel-info clickable">');
             column.append(panel);
             panel.append($('<div class="panel-heading">')
                .append($('<h3 class="panel-title">')
