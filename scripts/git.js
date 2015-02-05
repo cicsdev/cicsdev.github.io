@@ -11,7 +11,6 @@ jQuery.fn.loadRepositories = function(username) {
       sortByName(repos);
       var chunkedRepos = chunk(repos, 3);
 
-      //var list = $('<dl/>');
       target.empty();
       $(chunkedRepos).each(function() {
          var row = $('<div class="row">');
