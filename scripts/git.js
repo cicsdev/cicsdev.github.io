@@ -15,6 +15,7 @@ jQuery.fn.loadRepositories = function(username) {
       $(chunkedRepos).each(function() {
          var row = $('<div class="row">');
          $.each(this, function() {
+            var repo = this;
             var column = $('<div class="col-md-4">')
             var panel = $('<div class="panel panel-info">');
             column.append(panel);
@@ -23,6 +24,10 @@ jQuery.fn.loadRepositories = function(username) {
                .append($('<a href="'+this.html_url+'">')
                .append(this.name))));
             panel.append($('<div class="panel-body">').append(this.description));
+            $(panel).click(function(e){
+               e.preventDefault();
+               window.location=repo.html_url
+            })
             row.append(column);
          });
          target.append(row);
