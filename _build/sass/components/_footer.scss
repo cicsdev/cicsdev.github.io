@@ -1,0 +1,35 @@
+.footer {
+  @extend %clearfix;
+
+  $footer-background: #f4f4f4;
+  $footer-link-color: #5a5a5a;
+  $footer-link-color-hover: #3b6caa;
+
+  background-color: $footer-background;
+
+  &__items {
+    @extend %restricted-width-area;
+
+    line-height: 1.625rem;
+    list-style: none;
+    padding-bottom: 51px;
+    padding-top: 19px;
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 0 20px 0 0;
+
+    a {
+      color: $footer-link-color;
+      display: inline-block;
+      padding: 5px 0;
+      text-decoration: none;
+
+      &:hover {
+        color: $footer-link-color-hover;
+        text-decoration: underline;
+      }
+    }
+  }
+}

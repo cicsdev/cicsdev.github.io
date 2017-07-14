@@ -1,0 +1,118 @@
+$header-color: #fff;
+$header-border-color: #e5e5e5;
+$logo-color: #000;
+$underline-color: #3b6caa;
+$nav-link-color-hover: #3b6caa;
+
+.header {
+  @extend %clearfix;
+
+  background-color: $header-color;
+  border-bottom: 1px solid $header-border-color;
+
+  &__nav {
+    float: right;
+    margin-right: 20px;
+    overflow: hidden;
+    position: relative;
+
+    a {
+      @extend %underlined-menu-item;
+      @extend %nav-link;
+
+      color: inherit;
+      display: block;
+      float: left;
+      height: 50px;
+      line-height: 50px;
+      margin-left: 20px;
+      position: relative;
+      text-decoration: none;
+    }
+  }
+
+}
+
+%nav-link {
+  &:hover {
+    color: $nav-link-color-hover;
+  }
+}
+
+%underlined-menu-item {
+  &::after {
+    background: $underline-color;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    transform: translate3d(0, 4px, 0);
+    transition: transform .4s cubic-bezier(.4, 1, .4, 1);
+    width: 100%;
+  }
+
+  &:hover {
+    &::after {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+.ibm-home {
+  float: left;
+  margin-left: 20px;
+  overflow: hidden;
+  position: relative;
+
+  a {
+    @extend %underlined-menu-item;
+
+    display: block;
+    height: 50px;
+    text-indent: -999px;
+    width: 60px;
+
+    &::before {
+      -moz-osx-font-smoothing: grayscale; // sass-lint:disable-line no-vendor-prefixes
+      -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
+      color: $logo-color;
+      content: '\f137';
+      display: inline-block;
+      font-family: 'icons-ibm-v10';
+      font-size: 60px;
+      font-smoothing: antialiased;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      left: -1px;
+      line-height: 65px;
+      position: absolute;
+      speak: none;
+      text-decoration: none;
+      text-indent: 0;
+      text-rendering: optimizeLegibility;
+      text-transform: none;
+      top: 10px;
+    }
+  }
+}
+
+.ibm-parent-site-name {
+  float: left;
+  margin-left: 20px;
+  overflow: hidden;
+  position: relative;
+
+  a {
+    @extend %underlined-menu-item;
+
+    color: inherit;
+    display: block;
+    font-weight: 600;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+  }
+}

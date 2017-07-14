@@ -1,0 +1,4 @@
+extends:
+  - punchcard
+env:
+  browser: 1
