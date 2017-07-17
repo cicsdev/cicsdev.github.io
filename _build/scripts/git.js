@@ -36,6 +36,9 @@
   };
 
   const niceDescription = (description) => {
+    if (!description) {
+      return '';
+    }
     if (description.length > 130) {
       return `${description.substring(0, 130)}...`;
     }
