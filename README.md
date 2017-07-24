@@ -15,3 +15,7 @@ To develop this website, take the following steps:
 1. To see the full rendered site as GitHub serves it (complete with variables resolved), you need to serve the result via Jekyll, the static site generator that GitHub uses. [Install Jekyll](https://jekyllrb.com/docs/installation/), then run `jekyll serve` from the root of the repository to serve the site.
 
 The build of the site uses Gulp as a task runner, compiling Javascript and SASS, performing minification, and inserting front-matter to get Jekyll to resolve variables.
+
+## License
+
+This project is licensed under [Apache License Version 2.0](LICENSE).
