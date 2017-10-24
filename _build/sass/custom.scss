@@ -1,9 +1,11 @@
 @import 'box-sizing';
 @import 'clearfix';
 
-@import 'typography';
-@import 'layout';
+@import 'theme';
 
 @import 'components/header';
 @import 'components/repo';
 @import 'components/footer';
+
+@import 'typography';
+@import 'layout';

@@ -3,6 +3,7 @@ $header-border-color: #e5e5e5;
 $logo-color: #000;
 $underline-color: #3b6caa;
 $nav-link-color-hover: #3b6caa;
+$header-height: 50px;
 
 .header {
   @extend %clearfix;
@@ -23,8 +24,8 @@ $nav-link-color-hover: #3b6caa;
       color: inherit;
       display: block;
       float: left;
-      height: 50px;
-      line-height: 50px;
+      height: $header-height;
+      line-height: $header-height;
       margin-left: 20px;
       position: relative;
       text-decoration: none;
@@ -70,7 +71,7 @@ $nav-link-color-hover: #3b6caa;
     @extend %underlined-menu-item;
 
     display: block;
-    height: 50px;
+    height: $header-height;
     text-indent: -999px;
     width: 60px;
 
@@ -111,8 +112,8 @@ $nav-link-color-hover: #3b6caa;
     color: inherit;
     display: block;
     font-weight: 600;
-    height: 50px;
-    line-height: 50px;
+    height: $header-height;
+    line-height: $header-height;
     text-decoration: none;
   }
 }
