@@ -75,7 +75,7 @@ gulp.task('images', () => {
 });
 
 gulp.task('clean', () => {
-  del.sync(['../**/*', '!..', '!../_build', '!../_build/**'], {
+  del.sync(['../**/*', '!..', '!../README.md', '!../_config.yml', '!../LICENSE', '!../_build', '!../_build/**'], {
     force: true,
   });
 });

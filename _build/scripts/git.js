@@ -50,12 +50,12 @@
     empty(target);
     const loadingMessage = document.createElement('span');
     loadingMessage.classList.add('loading-message');
-    loadingMessage.appendChild(document.createTextNode(`Querying GitHub for ${username}'s repositories...`));
+    loadingMessage.appendChild(document.createTextNode(`Querying GitHub for ${username}’s repositories...`));
 
     githubUser(username, (err, data) => {
-      const repos = sortByName(data.data);
       empty(target);
-      if (!err) {
+      if (!err && data.meta.status < 400) {
+        const repos = sortByName(data.data);
         repos.forEach((repo) => {
           const newPanel = document.createElement('a');
           newPanel.classList.add('repo');
@@ -77,6 +77,10 @@
       }
       else {
         // In the event of API failure, redirect straight to GitHub
+        const sorryMessage = document.createElement('p');
+        sorryMessage.classList.add('sorry');
+        sorryMessage.appendChild(document.createTextNode('Sorry, we can’t show you this site right now. We’ll forward you to our GitHub organization page.'));
+        target.parentNode.replaceChild(sorryMessage, target);
         window.location = `https://github.com/${username}`;
       }
     });
