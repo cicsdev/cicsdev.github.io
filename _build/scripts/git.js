@@ -15,7 +15,7 @@
     };
 
     script = document.createElement('script');
-    script.src = `https://api.github.com/orgs/${username}/repos?callback=repos`;
+    script.src = `https://api.github.com/orgs/${username}/repos?callback=repos&per_page=100`;
     script.defer = 'defer';
     target.parentNode.insertBefore(script, target);
   };
