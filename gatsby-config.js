@@ -1,3 +1,8 @@
+const dotenv = require('dotenv');
+dotenv.config();
+
+const { githubQuery } = require('./github-query')
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Theme Carbon',
@@ -24,6 +29,17 @@ module.exports = {
           baseUrl:
             'https://github.com/carbon-design-system/gatsby-theme-carbon',
           subDirectory: '/packages/example',
+        },
+      },
+    },
+    {
+      resolve: `gatsby-source-github-api`,
+      options: {
+        url: "https://api.github.com/graphql",
+        token: process.env.GITHUB_TOKEN,
+        graphQLQuery: githubQuery,
+        variables: {
+          queryString: "is:public archived:false org:cicsdev"
         },
       },
     },
