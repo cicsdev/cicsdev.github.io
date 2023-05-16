@@ -3,7 +3,10 @@ dotenv.config();
 
 const { githubQuery } = require('./github-query')
 
+const pathPrefix = process.env.PATH_PREFIX || '/';
+
 module.exports = {
+  pathPrefix: pathPrefix,
   siteMetadata: {
     title: 'CICS on GitHub',
     description: 'A Gatsby theme for the carbon design system',
@@ -21,7 +24,6 @@ module.exports = {
       branch: 'main',
     },
   },
-  pathPrefix: `/`,
   plugins: [
     {
       resolve: 'gatsby-plugin-manifest',
