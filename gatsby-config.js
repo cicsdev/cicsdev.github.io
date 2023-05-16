@@ -5,32 +5,37 @@ const { githubQuery } = require('./github-query')
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Theme Carbon',
+    title: 'CICS on GitHub',
     description: 'A Gatsby theme for the carbon design system',
     keywords: 'gatsby,theme,carbon',
+    lang: 'en',
+    navigationStyle: '',
+    homepageTheme: 'g10',
+    interiorTheme: 'g10',
+    isSwitcherEnabled: false,
+    isSearchEnabled: true,
+    repository: {
+      baseUrl:
+        'https://github.com/cicsdev/cicsdev.github.io',
+      subDirectory: '',
+      branch: 'main',
+    },
   },
-  pathPrefix: `/gtc`,
+  pathPrefix: `/`,
   plugins: [
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Carbon Design Gatsby Theme',
+        name: 'CICS on GitHub',
         icon: 'src/images/favicon.svg',
-        short_name: 'Gatsby Theme Carbon',
+        short_name: 'CICS on GitHub',
         start_url: '/',
         display: 'browser',
       },
     },
     {
       resolve: 'gatsby-theme-carbon',
-      options: {
-        mediumAccount: 'carbondesign',
-        repository: {
-          baseUrl:
-            'https://github.com/carbon-design-system/gatsby-theme-carbon',
-          subDirectory: '/packages/example',
-        },
-      },
+      options: {},
     },
     {
       resolve: `gatsby-source-github-api`,
