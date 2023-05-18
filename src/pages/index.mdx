@@ -1,19 +1,15 @@
+import { LogoGithub } from '@carbon/icons-react';
 import HomepageTemplate from '../components/Homepage.js';
 export default HomepageTemplate;
 
 ## Featured samples
 
-<Row className="resource-card-group">
-<Column colMd={4} colLg={4} noGutterSm>
-    <ResourceCard
-      title="cics-java-jcicsx-samples"
-      aspectRatio="2:1"
-      actionIcon="arrowRight"
-      href="https://github.com/cicsdev/cics-java-jcicsx-samples"
-      >
-
-Samples to show different scenarios of how you might use the JCICSX API
-
-  </ResourceCard>
-</Column>
+<Row className="square-card-group">
+  <SquareCard
+    title="cics-java-jcicsx-samples"
+    bodyText="Samples to show different scenarios of how you might use the JCICSX API"
+    href="https://github.com/cicsdev/cics-java-jcicsx-samples"
+  >
+    <LogoGithub />
+  </SquareCard>
 </Row>
