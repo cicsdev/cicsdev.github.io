@@ -13,7 +13,7 @@ module.exports = {
     keywords: 'gatsby,theme,carbon',
     lang: 'en',
     navigationStyle: '',
-    homepageTheme: 'g10',
+    homepageTheme: 'dark',
     interiorTheme: 'g10',
     isSwitcherEnabled: false,
     isSearchEnabled: true,

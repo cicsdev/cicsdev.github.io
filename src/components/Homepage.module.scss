@@ -4,8 +4,3 @@
   position: relative;
   top: $spacing-06; //margin-top doesn't work on table-cell, and padding-top looks weird on focus
 }
-
-// work around for carbon.jpg path prefix issue
-[class*='Banner-module--grid'] {
-  background-color: #161616;
-}
