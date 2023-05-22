@@ -9,8 +9,8 @@ module.exports = {
   pathPrefix: pathPrefix,
   siteMetadata: {
     title: 'CICS on GitHub',
-    description: 'A Gatsby theme for the carbon design system',
-    keywords: 'gatsby,theme,carbon',
+    description: 'CICS application development samples on GitHub',
+    keywords: 'CICS,samples,developer',
     lang: 'en',
     navigationStyle: '',
     homepageTheme: 'dark',
@@ -26,6 +26,10 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-theme-carbon',
+      options: {},
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'CICS on GitHub',
@@ -34,10 +38,6 @@ module.exports = {
         start_url: '/',
         display: 'browser',
       },
-    },
-    {
-      resolve: 'gatsby-theme-carbon',
-      options: {},
     },
     {
       resolve: `gatsby-source-github-api`,
