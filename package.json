@@ -9,13 +9,15 @@
     "build": "gatsby build --prefix-paths",
     "build:clean": "gatsby clean && gatsby build --prefix-paths",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gh-pages -f -b gh-pages -d public -m \"Publish CICS dev site $GITHUB_SHA\""
   },
   "dependencies": {
     "dotenv": "^16.0.3",
     "gatsby": "^4.25.7",
     "gatsby-source-github-api": "^1.0.0",
     "gatsby-theme-carbon": "^3.1.1",
+    "gh-pages": "^5.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
