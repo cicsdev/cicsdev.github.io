@@ -12,12 +12,10 @@ const Repositories = () => {
           nodes {
             data {
               search {
-                edges {
-                  node {
-                    description
-                    name
-                    url
-                  }
+                nodes {
+                  description
+                  name
+                  url
                 }
               }
             }
@@ -27,16 +25,17 @@ const Repositories = () => {
     `
   );
 
-  const repos = data.allGithubData.nodes[0].data.search.edges;
+  const repos = data.allGithubData.nodes[0].data.search.nodes;
 
   return (
     <Row className="square-card-group">
       {
         repos.map(repo =>
           <SquareCard
-            title={repo.node.name}
-            bodyText={repo.node.description}
-            href={repo.node.url}
+            title={repo.name}
+            bodyText={repo.description}
+            href={repo.url}
+            color="dark"
           >
             <LogoGithub />
           </SquareCard>

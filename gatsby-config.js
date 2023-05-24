@@ -46,7 +46,7 @@ module.exports = {
         token: process.env.GITHUB_TOKEN,
         graphQLQuery: githubQuery,
         variables: {
-          queryString: "is:public archived:false org:cicsdev"
+          queryString: "is:public archived:false org:cicsdev sort:name-asc"
         },
       },
     },

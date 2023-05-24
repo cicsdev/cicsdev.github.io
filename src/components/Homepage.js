@@ -20,8 +20,6 @@ const customProps = {
     <HomepageCallout
       leftText={FirstLeftText}
       rightText={FirstRightText}
-      color="white"
-      backgroundColor="#061f80"
     />
   ),
   SecondCallout: (
