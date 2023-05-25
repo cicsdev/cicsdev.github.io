@@ -16,7 +16,7 @@ module.exports = {
     homepageTheme: 'dark',
     interiorTheme: 'g10',
     isSwitcherEnabled: false,
-    isSearchEnabled: true,
+    isSearchEnabled: false,
     repository: {
       baseUrl:
         'https://github.com/cicsdev/cicsdev.github.io',
