@@ -2,7 +2,7 @@ import React from 'react';
 import { FourOhFour } from 'gatsby-theme-carbon';
 
 const links = [
-  { href: '/all-samples', text: 'All samples' },
+  { href: '/', text: 'CICS on GitHub Homepage' },
 ];
 
 const Custom404 = () => <FourOhFour links={links} />;
