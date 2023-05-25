@@ -1,31 +1,32 @@
-# Gatsby Theme Carbon Starter
+# IBM CICS on GitHub
 
 ## What is this?
 
-> Gatsby [themes](https://www.gatsbyjs.org/docs/themes/) encapsulate all of the
-> configuration and implementation details of Gatsby websites. This is a
-> starter-kit (boilerplate) with a dependancy on the `gatsby-theme-carbon`
-> package. The primary goal of `gatsby-theme-carbon` is to get content authors
-> speaking the IBM Design Language with Carbon as soon as possible. It includes
-> some sample components/content demos in the `src/pages` directory.
+This is the
+[Gatsby](https://www.gatsbyjs.com/docs/) website for IBM CICS on GitHub, and is
+available at https://cicsdev.github.io.
 
-## How do I use it?
+## How do I update it?
 
-Check out our quick
+The website follows the
+[Carbon Design System](https://carbondesignsystem.com/) by using
+[gatsby-theme-carbon](https://github.com/carbon-design-system/gatsby-theme-carbon). 
+Check out the quick
 [getting started](https://gatsby.carbondesignsystem.com/getting-started) guide and
 video!
 
 `gatsby-theme-carbon` at it’s core relies on [mdx](https://mdxjs.com/) for page
-creation. Check out the `src/pages` directory for some examples for using mdx.
+creation in the `src/pages` directory.
+[Check out the docs for more information!](https://gatsby.carbondesignsystem.com)
 
-A key feature of Gatsby themes is component shadowing. By simply placing a
-component into the `src/gatsby-theme-carbon/components` location, you can
-override components used by the theme. You can read more about component
-shadowing
-[here](https://www.gatsbyjs.org/docs/themes/api-reference#component-shadowing).
+## How do I view my changes?
 
-You’re also free to make your own components and use them in your MDX pages.
+Running `yarn dev` will start the gatsby site for development.
 
-## What’s Next?
+If you have your own
+[fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo), run
+`yarn build:clean && yarn deploy` to share your updates using GitHub pages.
 
-[Check out the docs!](https://gatsby.carbondesignsystem.com)
+There are other
+[npm scripts](https://gatsby.carbondesignsystem.com/guides/npm-scripts) which may
+be helpful.
