@@ -12,7 +12,7 @@ const FirstRightText = () => (
   </p>
 );
 
-const BannerText = () => <h1>IBM CICS on GitHub</h1>;
+const BannerText = () => <></>;
 
 const customProps = {
   Banner: <HomepageBanner renderText={BannerText} image={Carbon} />,
