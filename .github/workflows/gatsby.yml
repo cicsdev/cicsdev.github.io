@@ -67,7 +67,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Gatsby
         env:
-          PREFIX_PATHS: 'true'
+          PREFIX_PATHS: ${{ vars.PREFIX_PATHS }}
           PATH_PREFIX: ${{ vars.PATH_PREFIX }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
