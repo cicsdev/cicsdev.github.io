@@ -1,9 +1,7 @@
 import React from 'react';
 import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon';
 import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
-import BannerImg from './Banner.png'
-
-import Carbon from './carbon.jpg';
+import BannerImg from '../images/ibm-cics-on-github-lead-banner.png'
 
 const FirstLeftText = () => <p>Welcome to CICS on GitHub</p>;
 
