@@ -43,22 +43,18 @@
       }
 
       .cls-17 {
-        fill: url(#linear-gradient-15);
-      }
-
-      .cls-18 {
         fill: url(#linear-gradient-13);
       }
 
-      .cls-19 {
+      .cls-18 {
         fill: url(#linear-gradient-12);
       }
 
-      .cls-20 {
+      .cls-19 {
         fill: url(#linear-gradient-10);
       }
 
-      .cls-21 {
+      .cls-20 {
         fill: url(#linear-gradient-11);
       }
 
@@ -106,10 +102,6 @@
     <linearGradient id="linear-gradient-12" x1="0" y1="516" x2="1904" y2="516" xlink:href="#linear-gradient-8"/>
     <linearGradient id="linear-gradient-13" x1="0" y1="788" x2="1904" y2="788" xlink:href="#linear-gradient-8"/>
     <linearGradient id="linear-gradient-14" x1="0" y1="1060" x2="680" y2="1060" xlink:href="#linear-gradient-8"/>
-    <linearGradient id="linear-gradient-15" x1="2495.19" y1="712.81" x2="2616.81" y2="591.19" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
-      <stop offset="1" stop-color="#fff" stop-opacity=".75"/>
-    </linearGradient>
   </defs>
   <g id="Background">
     <polygon class="cls-9" points="-8 -8 -8 1280 3848 1280 3847.91 -8 -8 -8"/>
@@ -125,15 +117,11 @@
   </g>
   <g id="Main_illustration" data-name="Main illustration">
     <rect class="cls-14" x="0" y="632" width="2576" height="40" rx="20" ry="20"/>
-    <g>
-      <circle class="cls-9" cx="2556" cy="652" r="76"/>
-      <path class="cls-9" d="m2556,586c36.39,0,66,29.61,66,66s-29.61,66-66,66-66-29.61-66-66,29.61-66,66-66m0-20c-47.5,0-86,38.5-86,86s38.5,86,86,86,86-38.5,86-86-38.5-86-86-86h0Z"/>
-    </g>
     <rect class="cls-15" x="0" y="224" width="680" height="40" rx="20" ry="20"/>
-    <rect class="cls-20" x="0" y="360" width="1296" height="40" rx="20" ry="20"/>
-    <rect class="cls-21" x="0" y="904" width="1296" height="40" rx="20" ry="20"/>
-    <rect class="cls-19" x="0" y="496" width="1904" height="40" rx="20" ry="20"/>
-    <rect class="cls-18" x="0" y="768" width="1904" height="40" rx="20" ry="20"/>
+    <rect class="cls-19" x="0" y="360" width="1296" height="40" rx="20" ry="20"/>
+    <rect class="cls-20" x="0" y="904" width="1296" height="40" rx="20" ry="20"/>
+    <rect class="cls-18" x="0" y="496" width="1904" height="40" rx="20" ry="20"/>
+    <rect class="cls-17" x="0" y="768" width="1904" height="40" rx="20" ry="20"/>
     <rect class="cls-16" x="0" y="1040" width="680" height="40" rx="20" ry="20"/>
     <rect class="cls-11" x="2680" y="360" width="240" height="40" rx="20" ry="20"/>
     <rect class="cls-10" x="2800" y="496" width="240" height="40" rx="20" ry="20"/>
@@ -159,7 +147,6 @@
     <circle class="cls-8" cx="1276" cy="924" r="20"/>
     <circle class="cls-8" cx="660" cy="1060" r="20"/>
     <rect class="cls-13" x="2984" y="360" width="240" height="40" rx="20" ry="20"/>
-    <path class="cls-17" d="m2556,606c25.36,0,46,20.64,46,46s-20.64,46-46,46-46-20.64-46-46,20.64-46,46-46m0-40c-47.5,0-86,38.5-86,86s38.5,86,86,86,86-38.5,86-86-38.5-86-86-86h0Z"/>
     <rect class="cls-11" x="3104" y="768" width="240" height="40" rx="20" ry="20"/>
   </g>
 </svg>
