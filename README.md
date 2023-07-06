@@ -1,21 +1,32 @@
-# IBM CICS on GitHub - website
+# IBM CICS on GitHub
 
-This website is the homepage of Git repositories for IBM CICS, and is available at [https://cicsdev.github.io](https://cicsdev.github.io).
+## What is this?
 
-## Local Development
+This is the
+[Gatsby](https://www.gatsbyjs.com/docs/) website for IBM CICS on GitHub, and is
+available at https://cicsdev.github.io.
 
-To develop this website, take the following steps:
+## How do I update it?
 
-1. Fork and clone it locally.
+The website follows the
+[Carbon Design System](https://carbondesignsystem.com/) by using
+[gatsby-theme-carbon](https://github.com/carbon-design-system/gatsby-theme-carbon). 
+Check out the quick
+[getting started](https://gatsby.carbondesignsystem.com/getting-started) guide and
+video!
 
-1. From the `_build` directory, run `npm install` to download dependencies. We assume you have a modern Node.js and NPM installed.
+`gatsby-theme-carbon` at it’s core relies on [mdx](https://mdxjs.com/) for page
+creation in the `src/pages` directory.
+[Check out the docs for more information!](https://gatsby.carbondesignsystem.com)
 
-1. From the `_build` directory, run `npm run build` to perform the build. To run the build and keep watching changes, run `npm run build -- watch`.
+## How do I view my changes?
 
-1. To see the full rendered site as GitHub serves it (complete with variables resolved), you need to serve the result via Jekyll, the static site generator that GitHub uses. [Install Jekyll](https://jekyllrb.com/docs/installation/), then run `jekyll serve` from the root of the repository to serve the site.
+Running `yarn dev` will start the gatsby site for development.
 
-The build of the site uses Gulp as a task runner, compiling Javascript and SASS, performing minification, and inserting front-matter to get Jekyll to resolve variables.
+If you have your own
+[fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo), run
+`yarn build:clean && yarn deploy` to share your updates using GitHub pages.
 
-## License
-
-This project is licensed under [Apache License Version 2.0](LICENSE).
+There are other
+[npm scripts](https://gatsby.carbondesignsystem.com/guides/npm-scripts) which may
+be helpful.

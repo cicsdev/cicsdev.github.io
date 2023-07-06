@@ -1,0 +1,24 @@
+{
+  "name": "cicsdev",
+  "private": true,
+  "version": "1.0.0",
+  "license": "Apache 2.0",
+  "scripts": {
+    "dev": "gatsby develop -H 0.0.0.0",
+    "dev:clean": "gatsby clean && gatsby develop -H 0.0.0.0",
+    "build": "gatsby build",
+    "build:clean": "gatsby clean && gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "deploy": "gh-pages -f -b gh-pages -d public -m \"Publish CICS dev site $GITHUB_SHA\""
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "gatsby": "4.25.0",
+    "gatsby-source-github-api": "^1.0.0",
+    "gatsby-theme-carbon": "^3.1.1",
+    "gh-pages": "^5.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
