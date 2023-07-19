@@ -42,6 +42,13 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: 'https://cicsdev.github.io',
+        stripQueryString: true,
+      },
+    },
+    {
       resolve: `gatsby-source-github-api`,
       options: {
         url: "https://api.github.com/graphql",
