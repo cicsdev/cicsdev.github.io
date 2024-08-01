@@ -13,7 +13,7 @@
     "deploy": "gh-pages -f -b gh-pages -d public -m \"Publish CICS dev site $GITHUB_SHA\""
   },
   "dependencies": {
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.4.5",
     "gatsby": "4.25.9",
     "gatsby-plugin-canonical-urls": "4.25.0",
     "gatsby-source-github-api": "^1.0.0",
