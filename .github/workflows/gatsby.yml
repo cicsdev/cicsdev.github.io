@@ -1,7 +1,11 @@
 # Building and deploy Gatsby site to GitHub Pages
 name: Build and deploy Gatsby site
 
-on: [ push, pull_request ]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
