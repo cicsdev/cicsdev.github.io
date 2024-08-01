@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "dotenv": "^16.0.3",
-    "gatsby": "4.25.7",
+    "gatsby": "4.25.9",
     "gatsby-plugin-canonical-urls": "4.25.0",
     "gatsby-source-github-api": "^1.0.0",
     "gatsby-theme-carbon": "^3.4.22",
