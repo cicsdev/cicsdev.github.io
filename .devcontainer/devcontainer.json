@@ -1,26 +1,18 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+// README at: https://github.com/devcontainers/templates/tree/main/src/jekyll
 {
-	"name": "Node.js & TypeScript",
+	"name": "Jekyll",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/typescript-node:0-20",
+	"image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [
-		8000,
-		9000
-	],
+	// "forwardPorts": [],
 
-	"remoteUser": "node",
-	"mounts": [
-		"source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
-	],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "sudo chown node node_modules"
+	// Uncomment the next line to run commands after the container is created.
+	// "postCreateCommand": "jekyll --version"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
